@@ -1,5 +1,7 @@
 {
   "accentColor": "#3649d9",
-  "cssTheme": "",
-  "textFontFamily": ""
+  "cssTheme": "Minimal",
+  "textFontFamily": "Arial",
+  "interfaceFontFamily": "Arial",
+  "theme": "moonstone"
 }
