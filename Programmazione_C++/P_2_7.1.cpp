@@ -4,18 +4,19 @@ using namespace std;
 int contatore = 0; 
 
 int recursive_power(int a, int n){
-	/*if(a==0 || a==1 || n==1){
-		contatore++; 
-		return a; 
-	}*/  if (n==0){
+	if (n==0){
 		a=1;
 		contatore++; 
 		return a; 
+	} else if (n%2==0) {
+		contatore++;
+		return recursive_power(a,n/2)*recursive_power(a,n/2);
 	} else {
-		contatore++; 
-		return a*recursive_power(a,n-1); 
-	} 
+		contatore ++;
+		return a*recursive_power(a,n/2)*recursive_power(a,n/2);
+	}
 }
+
 
 int main(){
 	int a,n; 
