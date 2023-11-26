@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 #include<iomanip>
 #include<cstdlib>
 #include<ctime>
@@ -73,59 +74,28 @@ int massimo_vettore(int *v1, int sup){
 	return t; 
 }
 
-void swap(int *v1, int a, int b){
-	int c=v1[a]; 
-	v1[a]=v1[b]; 
-	v1[b]=c; 
-}
+int* max_seq(int *v, int s, int &result){
+  int anchor = 0, index = 0;
 
-int partizione(int *v1, int inf, int sup){
+  for(int i=0; i<s; i++){
+    if(i>0 && v[i-1]>v[i]) 
+      anchor = i;
+    if(i-anchor+1>result) 
+      index = anchor;
+    result = max(result,i-anchor+1);
+  }
 
-	int p=v1[inf],i=inf+1,j=sup; 
-	 
-	while(i<=j){
-		if(v1[i]<=p){
-			i++; 
-		} else if(v1[i]>p && v1[j]>p){
-			j--;
-		} else if(v1[i]>p && v1[j]<=p){
-			 swap(v1,i,j); 
-			 i++; 
-			 j--; 
-		}
-	}
-	swap(v1,inf,j); 
-	return j;
-}
+  int* r = alloca_vettore(result);
 
-void quick_sorting(int *v, int inf, int sup){
-	/*cout << "Debug: inf=" << inf << ", sup=" << sup << endl;
-	stampa_vettore(v,sup+1); */
-	if(inf>=sup){		
-		return;
-	}
-	int k = partizione(v,inf,sup);
-	quick_sorting(v,inf,k-1);
-	quick_sorting(v,k+1,sup); 
-}
+  for(int j=0;j<result;j++){
+    r[j] = v[index+j];
+  }
 
-int* max_seq(int *v, int s){
+  /*for(int j=index;j<index+result;j++)
+    cout<<r[j]<<" ";*/
 
-	int n=0, inf=0, sup=0; 
-	int *r = alloca_vettore(s);
-	 
-	for(int i=1; i<s; i++){
-	
-	if(v[i]>v[i-1]){
-	
-	} else if(){
-		
-	}
-
-	}
-
-	int *p = alloca_vettore(n); 
-	return p; 
+  //cout<<index<<endl;
+  return r; 
 }
 
 int main()
@@ -133,7 +103,7 @@ int main()
   srand(time(0)); // si inizializza la generazione di numeri casuali
                   // e' necessario farlo una volta all'inizio dell'esecuzione
 
-  int *v,*v2,s,inf,sup;
+  int *v,*r,s,result=0; 
 
   do{
     cout << "Dimensione del vettore? ";
@@ -142,20 +112,15 @@ int main()
       cout << "La dimensione deve essere > 0" << endl;
   }while(s<=0);
 
-  v=legge_vettore(s);
-
-  /*cout << "Inserire estremo inferiore di ricerca: ";
-  cin >> inf; 
-  cout << "Inserire estremo superiore di ricerca: ";
-  cin >> sup;*/
+  v = legge_vettore(s);
  
-  //cout<<"L'indice finale del perno e': "<<partizione(v1,inf,sup)<<endl;
-  
-  quick_sorting(v,0,s-1); 
-  
-  stampa_vettore(v,s);
-  
+  r = max_seq(v,s,result);
+
+  cout<<"Massima sequenza crescente: "; 
+  stampa_vettore(r,result); 
+
   delete[] v;
+  delete[] r;
   return 0;
 }
 
