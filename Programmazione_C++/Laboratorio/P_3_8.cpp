@@ -74,27 +74,35 @@ int massimo_vettore(int *v1, int sup){
 	return t; 
 }
 
-int* max_seq(int *v, int s, int &result){
-  int anchor = 0, index = 0;
+int* diff(int *v1, int *v2, int s, int r, int &differenza){
+  int contatore=0;
 
   for(int i=0; i<s; i++){
-    if(i>0 && v[i-1]>v[i]) 
-      anchor = i;
-    if(i-anchor+1>result) 
-      index = anchor;
-    result = max(result,i-anchor+1);
+  	for(int j=0; j<r; j++){
+  		if(v1[i]==v2[j]){ 
+  			break; 		
+  		}
+  		if(j==r-1){
+  			differenza++;   
+  		}
+  	}
   }
-
-  int* r = alloca_vettore(result);
-
-  for(int j=0;j<result;j++){
-    r[j] = v[index+j];
+  
+  int* v3 = alloca_vettore(differenza);
+  
+  for(int i=0; i<s; i++){
+  	for(int j=0; j<r; j++){
+  		if(v1[i]==v2[j]){ 
+  			break;
+  		}
+  		if (j==r-1){
+  			v3[contatore]=v1[i]; 
+  			contatore++;
+  		}
+  	}
   }
-
-  /*for(int j=index;j<index+result;j++)
-    cout<<r[j]<<" ";*/
-
-  return r; 
+  
+  return v3; 
 }
 
 int main()
@@ -102,7 +110,7 @@ int main()
   srand(time(0)); // si inizializza la generazione di numeri casuali
                   // e' necessario farlo una volta all'inizio dell'esecuzione
 
-  int *v,*r,s,result=0; 
+  int *v1,*v2,*v3,s,r,differenza=0; 
 
   do{
     cout << "Dimensione del vettore? ";
@@ -110,16 +118,25 @@ int main()
     if(s<=0)
       cout << "La dimensione deve essere > 0" << endl;
   }while(s<=0);
-
-  v = legge_vettore(s);
+  
+  v1 = legge_vettore(s);
+  
+  do{
+    cout << "Dimensione del vettore? ";
+    cin >> r;
+    if(r<=0)
+      cout << "La dimensione deve essere > 0" << endl;
+  }while(r<=0);
+  
+  v2 = legge_vettore(r);
  
-  r = max_seq(v,s,result);
+  v3 = diff(v1,v2,s,r,differenza);
+  
+  stampa_vettore(v3,differenza);
 
-  cout<<"Massima sequenza crescente: "; 
-  stampa_vettore(r,result); 
-
-  delete[] v;
-  delete[] r;
+  delete[] v1;
+  delete[] v2;
+  delete[] v3;
   return 0;
 }
 

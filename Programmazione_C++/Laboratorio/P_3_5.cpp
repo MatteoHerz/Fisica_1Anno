@@ -89,9 +89,9 @@ int sorting(int *v1, int inf, int sup){
 		} else if(v1[i]>p && v1[j]>p){
 			j--;
 		} else if(v1[i]>p && v1[j]<=p){
-			 swap(v1,i,j); 
-			 i++; 
-			 j--; 
+			swap(v1,i,j); 
+			i++; 
+			j--; 
 		}
 	}
 	swap(v1,inf,j); 
@@ -115,7 +115,7 @@ int main()
   v1=legge_vettore(s);
 
   cout << "Inserire estremo inferiore di ricerca: ";
-  cin >> inf; 
+  cin >> inf;
   cout << "Inserire estremo superiore di ricerca: ";
   cin >> sup;
  
