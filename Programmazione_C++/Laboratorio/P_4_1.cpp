@@ -32,6 +32,10 @@ class poly{
   void product(const poly&, poly&);
   void derive(poly&);
   double root(double);
+  void set1(double*, int);
+  void set2(double, int);
+  double* coefficienti();
+  int grado(); 
 };
 
 // stampa polinomio
@@ -78,6 +82,36 @@ void poly::sum(const poly &p, poly &r)
       if(i1<=p.g) r.v[i1]+=p.v[i1];
     }
 }
+
+void poly::set1(double *vv, int gg){  //modifica il grado e i coefficienti del polinomio in private
+    if(g!=-1) delete[] v; 
+    g=gg;
+    v=new double[g+1];
+    for(int i1=0;i1<=g;i1++) v[i1]=vv[i1];
+}
+
+void poly::set2(double coeff, int grado){  //modifica il coefficienti del grado corrispettivo 
+    v[grado]=coeff;
+}
+
+int poly::grado(){  
+    return g; 
+}
+
+double* poly::coefficienti(){  
+    return v; 
+}
+
+void poly::product(const poly &p, poly &r) //prodotto di due polinomi
+{
+  r.g = g+p.g; 
+  
+  for(int i=0;i<=p.g;i++){
+      for(int j=0;j<=r.g;j++){
+        
+    }
+  }
+}; 
 
 int main()
 {
