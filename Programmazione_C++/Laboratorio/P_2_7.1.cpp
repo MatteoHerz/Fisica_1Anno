@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
 
 int contatore = 0; 
 
@@ -16,7 +16,6 @@ int recursive_power(int a, int n){
 		return a*recursive_power(a,n/2)*recursive_power(a,n/2);
 	}
 }
-
 
 int main(){
 	int a,n; 
