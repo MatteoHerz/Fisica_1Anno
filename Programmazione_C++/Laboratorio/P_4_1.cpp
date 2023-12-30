@@ -35,7 +35,7 @@ class poly{
   void set1(double*, int);
   void set2(double, int);
   double* coefficienti();
-  int grado(); 
+  int grado();
 };
 
 // stampa polinomio
@@ -104,19 +104,29 @@ double* poly::coefficienti(){
 
 void poly::product(const poly &p, poly &r) //prodotto di due polinomi
 {
-  r.g = g+p.g; 
+  r.g = g + p.g;
+  r.v = new double[r.g+1];
   
-  for(int i=0;i<=p.g;i++){
-      for(int j=0;j<=r.g;j++){
-        
+  for(int i=0;i<=g;i++){
+      for(int j=0;j<=p.g;j++){
+        r.v[i+j] += v[i]*p.v[j]; 
     }
   }
-}; 
+};
+
+void derive(const poly &d)
+{
+	d.g = g-1;
+  	d.v = new double[d.g + 1];
+  	for(int i=0;i<=g;i++){
+  		d.v[i] = v[i+1]*(i+1); 
+  	};
+}
 
 int main()
 {
   double coeff[]={-1.2,2.0,3.0};
-  poly a(coeff,2),b,c;
+  poly a(coeff,2),b,c,d;
 
   cout << "Il primo polinomio e': ";
   a.print();
@@ -125,9 +135,17 @@ int main()
   cout << "Il secondo polinomio e': ";
   b.print();
 
-  a.sum(b,c);
+  /*a.sum(b,c);
   cout << "La somma dei due polinomi e':";
-  c.print();
+  c.print();*/
 
+  /*a.product(b,c);
+  cout << "Il prodotto tra i due polinomi e':";
+  c.print();*/ 
+
+  a.derive(d); 
+  cout << "La derivata del polinomio è:";
+  d.print();
+  
   return 0;
 }
