@@ -1,0 +1,232 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{changepage}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage[a4paper, total={6in,9in}]{geometry}
+
+\usetikzlibrary{calc,patterns,angles,quotes}
+\captionsetup[table]{name=\textit{Tabella}}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+\renewcommand*\contentsname{Indice}
+
+\title{Esperienza 0 - Pendolo di Kater}
+\author{Matteo Herz}
+\date{7 Gennaio 2024}
+
+\begin{document}
+\include{intro.tex}
+
+\newpage
+
+\tableofcontents 
+
+\newpage 
+\section{Punto 1}
+\section{Punto 2}
+\section{Punto 3}
+\section{Punto 4}
+
+\hspace{0.6cm}
+    \begin{minipage}[c]{0.45\textwidth}
+    	\centering 
+        \captionof{table}{\textit{Dati non accorpati}}
+        \begin{tabular}{llrr}
+        	\toprule
+            Media & $\bar{x}$ & 1.95 & s \\
+            Varianza & $\sigma^2_x$ & 0.0070 & $s^2$ \\
+            Dev. std & $\sigma_x$ & 0.083 & s \\
+            Dev. std (media) & $\sigma_{\bar{x}}$ & 0.0083 & s \\
+            Mediana & \textit{Me} & 1.95 & s \\
+            Moda & $\tilde{x}$ & 1.94 & s \\
+            \bottomrule 
+        \end{tabular}
+    \end{minipage}%
+    \begin{minipage}[c]{0.45\textwidth}
+    	\centering
+        \captionof{table}{\textit{Dati accorpati}}
+        \begin{tabular}{llrr}
+        	\toprule
+            Media & $\bar{x}$ & 1.95 & s \\
+            Varianza & $\sigma^2_x$ & 0.0068 & $s^2$ \\
+            Dev. std & $\sigma_x$ & 0.082 & s \\
+            Dev. std (media) & $\sigma_{\bar{x}}$ & 0.0083 & s \\
+            Mediana & \textit{Me} & 1.95 & s \\
+            Moda & $\tilde{x}$ & 1.94 & s \\
+            \bottomrule
+        \end{tabular}
+    \end{minipage}
+    \vspace{0.4cm}
+
+\noindent
+Come si evince dal confronto dei dati delle tabelle sopra riportate, l'accorpamento dei dati non ha portato a significativi cambiamenti nei rispettivi campi.
+\newline 
+\begin{table}[ht]
+\centering
+\captionof{table}{\textit{Dati prima e dopo l'accorpamento con variazioni percentuali}}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Statistica} & \textbf{Simbolo} & \textbf{Valore Prima} & \textbf{Valore Dopo} & \textbf{Variazione Percentuale} \\
+\midrule
+Media & $\bar{x}$ & 1.95 s & 1.95 s & 0\% \\
+Varianza & $\sigma^2$ & 0.0070 s² & 0.0068 s² & -2.86\% \\
+Dev. std & $\sigma_x$ & 0.083 s & 0.082 s & -1.20\% \\
+Dev. std (media) & $\sigma_{\bar{x}}$ & 0.0083 s & 0.0083 s & 0\% \\
+Mediana & $Me$ & 1.95 s & 1.95 s & 0\% \\
+Moda & $\tilde{x}$ & 1.94 s & 1.94 s & 0\% \\
+\bottomrule
+\end{tabular}
+\label{tab:dati_accorpati}
+\end{table}
+
+Prima di procedere all'accorpamento dei dati ho effettuato quello che abbiamo definito come \textit{Test del 3-$\sigma$}. Questo test permette di determinare se una data misurazione all'interno del nostro campione sia eliminabile o meno. Per fare ciò mi baso sulla probabilità empirica legata alla distrubuzione di Gauss di osservare il dato in questione.
+\newline\indent
+Se la probabilità di osservare tale misura (\textit{t}) risulta minore della probabilità di osservare misure più distanti di 3 deviazioni standard $\sigma_x$ dal valore centrale $\bar{x}$, ovvero $P( |t| > \mu - 3\sigma) \approx 0.3\% $, e tenendo conto che nel nostro caso su 100 misurazioni questo corrisponderebbe ad osservarne meno di una, allora quest'ultima può essere considerata "estranea" al campione di popolazione preso in analisi e dunque rigettata.
+\newline
+\subsection{Errore sulla stima - Sensibilità dello strumento}
+Il confronto tra la deviazione standard della media (considerata come errore sulla stima) e la sensibilità dello strumento indica che l'incertezza nei dati raccolti è circa minore del 17\% rispetto alla sensibilità dello strumento. Questo suggerisce che, pur essendoci una certa variabilità nei dati, questa variabilità risulta essere ancora contenuta entro i limiti di precisione del nostro strumento. Sulla base di queste osservazioni possiamo dedurre che i dati generati dall'esperimento siano abbastanza precisi in relazione alla sensibilità dello strumento utilizzato.
+
+\subsection{Risultato ottenuto}
+In definitiva, la stima del periodo di oscillazione del pendolo ottenuta dall'analisi dati risulta essere: 
+\begin{center}
+$\mathbf{1.95 \pm 0.01 \, \text{s}}$
+\end{center}
+
+\section{Test del $\chi^2$}
+A fronte dell'esperienza condotta, mi aspetto che a descrivere l'istogramma sperimentale delle misure ripetute del periodo di oscillazione del pendolo sia la \textit{distribuzione di Gauss}.\newline
+Questo poiché suppongo che le misurazioni effettuate siano soggette principalmente a sorgenti di errori casuali e trascurabili errori sistematici. Se così dovesse risultare, i valori misurati sarebbero distribuiti su una curva a campana centrata attorno alla miglior stima del valore vero $\bar{x}$, non distante da $\mu$. \newline 
+Nel caso in cui invece fossimo in presenza di errori sistematici non trascurabili dovrei osservare la distribuzione limite centrata su un valore $\bar{x}$ distante dal valor vero $\mu$ calcolato dalla fotocellula.
+\newline
+\subsection{Dati ottenuti}
+\begin{table}[ht]
+\centering
+\captionof{table}{\textit{Parametri del test del $\chi^2$ per la verifica della distribuzione di Gauss}}
+\begin{tabular}{|l|c|p{10cm}|}
+\hline
+\textbf{Voce} & \textbf{Descrizione} \\
+\hline
+Ipotesi del test & \textbf{\(H_0\)}: Le misurazioni seguono la distribuzione di Gauss \\
+                & \textbf{\(H_1\)}: Le misurazioni non seguono la distribuzione di Gauss \\
+\hline
+Livello di significatività scelto & $\alpha = 0.05$ \\
+\hline
+Valore del $\chi^2$ calcolato & 1.72 \\
+\hline
+Numero di gradi di libertà & 4 \\
+\hline
+Valore critico della variabile $\chi^2$ & 9.49 \\
+\hline
+\end{tabular}
+\label{tab:chi_quadro_test}
+\end{table}
+
+\subsection{Conclusione Test del $\chi^2$}
+L'ipotesi nulla ($H_0$) che le misurazioni seguano la distribuzione di Gauss è confermata dai dati calcolati. Il valore del $\chi^2$ calcolato, pari a 1.72, con 4 gradi di libertà, è inferiore al valore critico della variabile $\chi^2$ a un livello di significatività del 5\%, che risulta essere del 9.49.
+
+\noindent Inoltre si osserva che il $\chi^2$ calcolato è relativamente basso rispetto al valore critico, indicando un \textit{fit} coerente della distribuzione di Gauss a quella relativa alle 100 misurazioni. 
+\\In conclusione, la distribuzione normale (gaussiana) può essere considerata compatibile con i dati raccolti.
+
+\section{Test di Gauss}
+\subsection{Stima del Periodo e Misura della Fotocellula}
+
+Riporto la stima del periodo ottenuta e la misura della fotocellula con le relative incertezze, unità di misura (u.m.) e cifre significative:
+
+\[ \text{Periodo} = 1.95 \pm 0.01 \text{ s} \]
+\[ \text{Misura della Fotocellula} = 1.957 \pm 0.001 \text{ s} \]
+
+\subsection{Test di Compatibilità tra le Misure}
+
+Per verificare se i due valori sono compatibili, utilizzo il test di Gauss o "test z".\\
+Utilizziamo il test di Gauss in quanto quest'ultimo ci permette di ricavare in maniera empirica la probabilità di osservare stime ($\bar{x}_i$), affette da soli errori casuali, più distanti in valore assoluto dal valor vero ($\mu$) rispetto alla media ($\bar{x}$) da noi calcolata. 
+
+Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da sole fluttuazioni statistiche (e dunque compatibile con $\mu$) o da errori sistematici che la traslano inevitabilmente rispetto al valore vero (e dunque incompatibile con $\mu$). 
+
+\subsubsection{Informazioni relative al Test}
+
+\begin{table}[ht]
+    \centering
+        \captionof{table}{\textit{Parametri del test di Gauss}}
+            \begin{tabular}{|l|c|p{10cm}|}
+                \hline
+                    \textbf{Voce} & \textbf{Descrizione} \\
+                \hline
+                    Ipotesi del test & \textbf{\(H_0\)}: I due valori sono compatibili \\
+                \hline
+                    Livello di significatività scelto & \(\alpha = 0.05\) \\
+                \hline
+                    Valore Critico della Variabile Statistica &  1.96 \\
+                \hline
+                    Valore della Variabile Statistica Calcolata & 0.90 \\
+                \hline
+                    p-value & 0.368 \\
+                \hline          
+            \end{tabular}
+        \label{tab:gauss_test}
+\end{table}
+
+\subsubsection{Conclusione del Test}
+Il valore della variabile statistica calcolata è inferiore al valore critico, e il p-value è superiore al livello di significatività, dunque possiamo confermare l'ipotesi nulla ($H_0$) di compatibilità tra la stima del periodo di oscillazione $\bar{x} = 1.95 \pm 0.01 \text{ s}$ e la media della popolazione (valor vero) $\mu = 1.957 \pm 0.001 \text{ s}$, il tutto con un livello di significatività $\alpha \text{ pari al } 5\%$.
+\\Tale compatibilità indica che siamo effetivamente in presenza di errori sistematici trascurabili rispetto agli errori casuali (fluttuazioni statistiche).
+
+\subsection{Commenti}
+\begin{itemize}
+    \item \textbf{Analisi degli Errori:} \textit{L'analisi degli errori suggerisce miglioramenti nella procedura di misurazione o negli strumenti utilizzati per futuri esperimenti?}
+    
+    Sicuramente una misurazione del periodo di oscillazione del pendolo di Kater effettuata dal vivo potrebbe risultare più precisa rispetto ad un misurazione effettuata via video, con schermi aventi talvolta frequenze di aggiornamento e latenze differenti.
+    \\Inoltre l'utilizzo di cronometri aventi sensibilità di 0.01 s limita in parte l'analisi dati costringendoci a considerare meno cifre significative e a dover compiere alcune considerazioni come in [4.1]. 
+    
+    \item \textbf{Errori Sistematici:} \textit{Sono presenti errori sistematici? È possibile escluderli? Se non è possibile, quanto incidono rispetto agli errori casuali?}
+
+    Sicuramente sono presente errori sistematici legati alla sensibilità non elevata (0.01 s) dei cronometri utilizzati, piuttosto che errori sistematici legati alla video registrazione e ai dispositivi su cui questa viene riprodotta, come citato sopra.
+    \\Inoltre non è possibile escludere totalmente la presenza di errori sistematici in quanto fortemente legati, in maniera intrinseca, ai nostri strumenti di lavoro non professionali.
+    \\Nonostante questo però, come emerge dall'analisi dati, questi ultimi incidono in maniera trascurabile rispetto alle fluttuazioni statistiche, ampliamente presenti lungo tutta la procedura di misurazione.
+    
+\end{itemize}
+
+\section{Intervalli $\mu \pm \sigma_x$ e $\mu \pm \sigma_{\bar{x}}$} 
+\textbf{Intervallo} $\mu \pm \sigma_x$: rappresenta l'intervallo di confidenza del 68\% attorno alla media della popolazione ($\mu$), dove $\sigma_x$ è la deviazione standard delle singole misure. Questo significa che se si considera la deviazione standard come incertezza sulla singola misura (cioè $x = \mu \pm \sigma_x$), si può avere fiducia al 68\% che tale misura si trovi entro una deviazione standard dal valor vero.
+\\\\ \noindent\textbf{Intervallo} $\mu \pm \sigma_{\bar{x}}$: rappresenta l'intervallo di confidenza del 68\% attorno alla media della popolazione ($\mu$), dove $\sigma_{\bar{x}}$ è la deviazione standard della media.
+\\Se si compissero infatti molte determinazioni della media di $N$ misure, allora i risultati $\bar{x}$ si distribuirebbero attorno a $\mu$ con larghezza $\sigma_{\bar{x}} =  \frac{\sigma_x}{\sqrt{N}} $.
+\\ Dunque, se si calcolasse la media di $N$ misure una volta, si potrebbe essere confidenti al 68\% che tale risultato giaccia entro una distanza $ \sigma_{\bar{x}}$ dal valor vero.
+\\\\ \textbf{TAYLOR PAG. 152}
+
+\subsection{$N$ misure necessarie}
+Per determinare il numero di misure $N$ necessarie affinché l'errore sulla media sia uguale alla sensibilità dello strumento, utilizzo la formula per il calcolo dell'errore standard della media ($\sigma_{\bar{x}}$):
+
+\[\sigma_{\bar{x}} = \frac{\sigma_x}{\sqrt{N}}\]
+
+\noindent Dove:
+\begin{itemize}
+  \item $\sigma_{\bar{x}}$ è l'errore standard della media,
+  \item $\sigma_x$ è la deviazione standard delle singole misure,
+  \item $N$ è il numero di misure.
+\end{itemize}
+
+\noindent Dunque basta risolvere questa equazione rispetto a $N$ per ottenere il numero necessario di misure. Se la sensibilità dello strumento è $\delta$ e voglio che l'errore sulla media ($\sigma_{\bar{x}}$) sia uguale a $\delta$, allora risolverò l'equazione:
+
+\[\frac{\sigma_x}{\sqrt{N}} = \delta\]
+
+\noindent Risolvendo per $N$ ottengo:
+
+\[N = \left( \frac{\sigma_x}{\delta} \right)^2\]
+
+\noindent Sostituendo i valori numerici:
+
+\[N = 67.24 \approx 68 \]
+
+\section{P8}
+
+
+
+\section{P9}
+
+
+
+\end{document}
+https://www.overleaf.com/project/65870edfd7e2495b8821da45

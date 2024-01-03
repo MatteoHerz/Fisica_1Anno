@@ -1,0 +1,49 @@
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		\textbf{\huge Relazione Pendolo di Kater}
+		
+		\vspace{0.6cm}
+		{\LARGE Matteo Herz} \\
+		\vspace{0.5cm}
+		{\large 7 Gennaio 2024}
+		\vspace{3cm}
+		
+		\begin{tikzpicture}[scale=2.0]
+			% save length of g-vector and theta to macros
+			\pgfmathsetmacro{\Gvec}{1.5}
+			\pgfmathsetmacro{\myAngle}{30}
+			% calculate lengths of vector components
+			\pgfmathsetmacro{\Gcos}{\Gvec*cos(\myAngle)}
+			\pgfmathsetmacro{\Gsin}{\Gvec*sin(\myAngle)}
+			
+			\coordinate (centro) at (0,0);
+			\draw[dashed,gray,-] (centro) -- ++ (0,-3.5) node (mary) [black,below]{$ $};
+			\draw[thick] (centro) -- ++(270+\myAngle:3) coordinate (bob);
+			\pic [draw, ->, "$\theta$", angle eccentricity=1.5] {angle = mary--centro--bob};
+			\draw [blue,-stealth] (bob) -- ($(bob)!\Gcos cm!(centro)$);
+			\draw [-stealth] (bob) -- ($(bob)!-\Gcos cm!(centro)$)
+			coordinate (gcos)
+			node[midway,above right] {$a\cos\theta$};
+			\draw [-stealth] (bob) -- ($(bob)!\Gsin cm!90:(centro)$)
+			coordinate (gsin)
+			node[midway,above left] {$a\sin\theta$};
+			\draw [-stealth] (bob) -- ++(0,-\Gvec)
+			coordinate (g)
+			node[near end,left] {$g$};
+			\pic [draw, ->, "$\theta$", angle eccentricity=1.5] {angle = g--bob--gcos};
+			\filldraw [fill=black!40,draw=black] (bob) circle[radius=0.1];
+		\end{tikzpicture}
+		
+		\vfill   %riempie in verticale fino a fine pagina 
+		
+		\vspace{0.8cm}
+		
+		Università degli studi di Torino\\
+		Laurea Triennale in Fisica\\
+		\vspace*{0.1cm}
+		
+		
+	\end{center}
+\end{titlepage}
