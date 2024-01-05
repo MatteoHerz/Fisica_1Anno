@@ -15,5 +15,9 @@
 \contentsline {subsection}{\numberline {6.3}Commenti}{4}{}%
 \contentsline {section}{\numberline {7}Intervalli $\mu \pm \sigma _x$ e $\mu \pm \sigma _{\bar {x}}$}{5}{}%
 \contentsline {subsection}{\numberline {7.1}$N$ misure necessarie}{5}{}%
-\contentsline {section}{\numberline {8}P8}{5}{}%
-\contentsline {section}{\numberline {9}P9}{5}{}%
+\contentsline {section}{\numberline {8}Conclusione}{5}{}%
+\contentsline {subsection}{\numberline {8.1}Sintesi Quantitativa dei Risultati dell'Esperienza}{5}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Risultati Principali}{5}{}%
+\contentsline {subsection}{\numberline {8.2}Qualità della misura}{6}{}%
+\contentsline {subsection}{\numberline {8.3}Accordo dei risultati}{6}{}%
+\contentsline {subsection}{\numberline {8.4}Test condotti ed esiti}{6}{}%
