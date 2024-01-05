@@ -57,8 +57,8 @@
             Varianza & $\sigma^2_x$ & 0.0068 & $s^2$ \\
             Dev. std & $\sigma_x$ & 0.082 & s \\
             Dev. std (media) & $\sigma_{\bar{x}}$ & 0.0083 & s \\
-            Mediana & \textit{Me} & 1.95 & s \\
-            Moda & $\tilde{x}$ & 1.94 & s \\
+            Mediana & \textit{Me} & - & - \\
+            Moda & $\tilde{x}$ & - & - \\
             \bottomrule
         \end{tabular}
     \end{minipage}
@@ -66,7 +66,6 @@
 
 \noindent
 Come si evince dal confronto dei dati delle tabelle sopra riportate, l'accorpamento dei dati non ha portato a significativi cambiamenti nei rispettivi campi.
-\newline 
 \begin{table}[ht]
 \centering
 \captionof{table}{\textit{Dati prima e dopo l'accorpamento con variazioni percentuali}}
@@ -78,8 +77,6 @@ Media & $\bar{x}$ & 1.95 s & 1.95 s & 0\% \\
 Varianza & $\sigma^2$ & 0.0070 s² & 0.0068 s² & -2.86\% \\
 Dev. std & $\sigma_x$ & 0.083 s & 0.082 s & -1.20\% \\
 Dev. std (media) & $\sigma_{\bar{x}}$ & 0.0083 s & 0.0083 s & 0\% \\
-Mediana & $Me$ & 1.95 s & 1.95 s & 0\% \\
-Moda & $\tilde{x}$ & 1.94 s & 1.94 s & 0\% \\
 \bottomrule
 \end{tabular}
 \label{tab:dati_accorpati}
@@ -224,35 +221,43 @@ Per determinare il numero di misure $N$ necessarie affinché l'errore sulla medi
 
 \section{Conclusione}
 \subsection{Sintesi Quantitativa dei Risultati dell'Esperienza}
-\subsubsection{Risultati Principali}
 
 \begin{table}[ht]
 	\centering
 	\captionof{table}{\textit{Sintesi Quantitativa dei Risultati dell'Esperienza}}
-	\begin{tabular}{|l|r|c|}
+	\begin{tabular}{|l|r|r|c|}
 		\hline
-		\textbf{Test} & \textbf{Valori Ottenuti} & \textbf{Esito}  \\
+		\textbf{Test} & \textbf{Valori Ottenuti} & \textbf{Valori Limite} & \textbf{Esito}  \\
 		\hline
-		Test del $\chi^2$ & $\chi^2_{oss} = 1.72$  &  Test Superato \\
+		Test del $\chi^2$ & $\chi^2_{oss} = 1.72$  & $\chi^2_{critico} = 9.49$ &  Test Superato \\
 		\hline
-		Test di Gauss & $z_{oss} = 0.90$ & Test Superato \\
-		& p-value = 0.368 &   \\
+		Test di Gauss & $z_{oss} = 0.90$ & $z_{critico} = 1.96$ & Test Superato \\
+		& $p-value_{oss} = 0.368$ & $p-value_{critico} = ...$ &   \\
 		\hline
 	\end{tabular}
 	\label{tab:sintesi_quantitativa}
 \end{table}
 
+\[ \text{\textbf{Media del Periodo di oscillazione \underline{calcolata}}  } \rightarrow \bar{x} = 1.95 \pm 0.082\text{ s} \]
+\[ \text{\textbf{Media del Periodo di oscillazione \underline{teorica}}    } \rightarrow \mu = 1.957 \pm 0.001 \text{ s} \]
+
+\subsection{Qualità della misura:}
+Al fronte dei risultati ottenuti e degli esiti dei test, le misure sono risultate precise e sufficientemente accurate, con un media ($\bar{x}$) calcolata distante solo 0.9 $\sigma_{\bar{x}}$ dal valor vero ($\mu$) registrato dalla fotocellula.
+
+\subsection{Possibili fonti di errore:}
 \begin{itemize}
-	\item \textbf{Media del periodo del pendolo:} xx s (Concorda/Scosta)
-	\item \textbf{Deviazione standard della media:} xx s (Accettabile/Non Accettabile)
-	\item \textbf{Risultati test di Gauss:} Conformi/Non Conformi
+	\item \textbf{Errori sistematici:} 
+	\item \textbf{Errori casuali:}
 \end{itemize}
 
-\subsection{Qualità della misura}
+\subsection{Test condotti ed esiti:}
+\begin{itemize}
+	\item \textbf{Test di Gauss:} Il test di Gauss conferma l'ipotesi nulla $H_0$ confermando l'accordo tra la media $\bar{x}$ osservata e la media della popolazione $\mu$ calcolata attraverso la fotocellula.
+	\item \textbf{Test del Chi Quadro:} Il test del Chi Quadro conferma l'ipotesi nulla $H_0$, confermando che la distribuzione normale attesa si adatta alla distribuzione dei dati osservati.
+\end{itemize}
 
-\subsection{Accordo dei risultati}
-
-\subsection{Test condotti ed esiti}
+\subsection{Conclusioni generali:}
+In generale, i risultati dell'esperimento sono coerenti con gli obiettivi stabiliti. Tuttavia, è importante notare che ogni esperimento potrebbe avere limitazioni, come variazioni nelle condizioni sperimentali o errori di misura. La robustezza dei test statistici utilizzati suggerisce una buona affidabilità dei risultati ottenuti.
 
 
 \end{document}
