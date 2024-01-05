@@ -87,7 +87,7 @@ Prima di procedere all'accorpamento dei dati ho effettuato quello che abbiamo de
 Se la probabilità di osservare tale misura (\textit{t}) risulta minore della probabilità di osservare misure più distanti di 3 deviazioni standard $\sigma_x$ dal valore centrale $\bar{x}$, ovvero $P( |t| > \mu - 3\sigma) \approx 0.3\% $, e tenendo conto che nel nostro caso su 100 misurazioni questo corrisponderebbe ad osservarne meno di una, allora quest'ultima può essere considerata "estranea" al campione di popolazione preso in analisi e dunque rigettata.
 \newline
 \subsection{Errore sulla stima - Sensibilità dello strumento}
-Il confronto tra la deviazione standard della media (considerata come errore sulla stima) e la sensibilità dello strumento indica che l'incertezza nei dati raccolti è circa minore del 17\% rispetto alla sensibilità dello strumento. Questo suggerisce che, pur essendoci una certa variabilità nei dati, questa variabilità risulta essere ancora contenuta entro i limiti di precisione del nostro strumento. Sulla base di queste osservazioni possiamo dedurre che i dati generati dall'esperimento siano abbastanza precisi in relazione alla sensibilità dello strumento utilizzato.
+Il confronto tra la deviazione standard della media (considerata come errore sulla stima) e la sensibilità dello strumento indica che l'incertezza nei dati raccolti è circa minore del 17\% rispetto alla sensibilità dello strumento. Questo suggerisce che, pur essendoci una certa variabilità nei dati, questa variabilità risulta essere ancora contenuta entro i limiti di precisione del nostro strumento. Sulla base di queste osservazioni posso dedurre che i dati generati dall'esperimento siano abbastanza precisi in relazione alla sensibilità dello strumento utilizzato.
 
 \subsection{Risultato ottenuto}
 In definitiva, la stima del periodo di oscillazione del pendolo ottenuta dall'analisi dati risulta essere: 
@@ -155,13 +155,13 @@ Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da so
                 \hline
                     Ipotesi del test & \textbf{\(H_0\)}: I due valori sono compatibili \\
                 \hline
-                    Livello di significatività scelto & \(\alpha = 0.05\) \\
+                    Livello di significatività scelto ($\alpha$) & 0.05 \\
                 \hline
                     Valore Critico della Variabile Statistica ($z_{critico}$)  &  1.96 \\
                 \hline
                     Valore della Variabile Statistica Calcolata ($z_{oss}$) & 0.90 \\
                 \hline
-                p-value critico & ... \\
+                p-value critico & 0.05  \\
                 \hline
                     p-value & 0.368 \\
                 \hline          
@@ -170,21 +170,24 @@ Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da so
 \end{table}
 
 \subsubsection{Conclusione del Test}
-Il valore della variabile statistica calcolata è inferiore al valore critico, e il p-value è superiore al livello di significatività, dunque possiamo confermare l'ipotesi nulla ($H_0$) di compatibilità tra la stima del periodo di oscillazione $\bar{x} = 1.95 \pm 0.01 \text{ s}$ e la media della popolazione (valor vero) $\mu = 1.957 \pm 0.001 \text{ s}$, il tutto con un livello di significatività $\alpha \text{ pari al } 5\%$.
-\\Tale compatibilità indica che siamo effetivamente in presenza di errori sistematici trascurabili rispetto agli errori casuali (fluttuazioni statistiche).
+Il valore della variabile statistica calcolata è inferiore al valore critico, e il p-value è superiore al livello di significatività, dunque possiamo confermare l'ipotesi nulla ($H_0$) di compatibilità tra la stima del periodo di oscillazione $\bar{x} = 1.95 \pm 0.01 \text{ s}$ e la media della popolazione (valor vero) $\mu = 1.957 \pm 0.001 \text{ s}$, il tutto con un livello di significatività $\alpha = 5\%$.
+
+Tale compatibilità indica che siamo effetivamente in presenza di errori sistematici trascurabili rispetto agli errori casuali (fluttuazioni statistiche).
 
 \subsection{Commenti}
 \begin{itemize}
     \item \textbf{Analisi degli Errori:} \textit{L'analisi degli errori suggerisce miglioramenti nella procedura di misurazione o negli strumenti utilizzati per futuri esperimenti?}
     
     Sicuramente una misurazione del periodo di oscillazione del pendolo di Kater effettuata dal vivo potrebbe risultare più precisa rispetto ad un misurazione effettuata via video, con schermi aventi talvolta frequenze di aggiornamento e latenze differenti.
-    \\Inoltre l'utilizzo di cronometri aventi sensibilità di 0.01 s limita in parte l'analisi dati costringendoci a considerare meno cifre significative e a dover compiere alcune considerazioni come in [4.1]. 
+    
+    Inoltre l'utilizzo di cronometri aventi sensibilità di 0.01 s limita in parte l'analisi dati costringendoci a considerare meno cifre significative e a dover compiere alcune considerazioni come in [4.1]. 
     
     \item \textbf{Errori Sistematici:} \textit{Sono presenti errori sistematici? È possibile escluderli? Se non è possibile, quanto incidono rispetto agli errori casuali?}
 
     Sicuramente sono presente errori sistematici legati alla sensibilità non elevata (0.01 s) dei cronometri utilizzati, piuttosto che errori sistematici legati alla video registrazione e ai dispositivi su cui questa viene riprodotta, come citato sopra.
-    \\Inoltre non è possibile escludere totalmente la presenza di errori sistematici in quanto fortemente legati, in maniera intrinseca, ai nostri strumenti di lavoro non professionali.
-    \\Nonostante questo però, come emerge dall'analisi dati, questi ultimi incidono in maniera trascurabile rispetto alle fluttuazioni statistiche, ampliamente presenti lungo tutta la procedura di misurazione.
+    
+    Inoltre non è possibile escludere totalmente la presenza di errori sistematici in quanto fortemente legati, in maniera intrinseca, ai nostri strumenti di lavoro non professionali.
+    \\Nonostante questo però, come emerge dall'analisi dati, questi ultimi incidono in maniera trascurabile rispetto alle fluttuazioni statistiche, presenti invece lungo tutta la procedura di misurazione.
     
 \end{itemize}
 
@@ -217,7 +220,7 @@ Per determinare il numero di misure $N$ necessarie affinché l'errore sulla medi
 
 \noindent Sostituendo i valori numerici:
 
-\[N = 67.24 \approx 68 \]
+\[N \approx 68 \]
 
 \section{Conclusione}
 \subsection{Sintesi Quantitativa dei Risultati dell'Esperienza}
@@ -242,23 +245,25 @@ Per determinare il numero di misure $N$ necessarie affinché l'errore sulla medi
 \[ \text{\textbf{Media del Periodo di oscillazione \underline{teorica}}    } \rightarrow \mu = 1.957 \pm 0.001 \text{ s} \]
 
 \subsection{Qualità della misura:}
-Al fronte dei risultati ottenuti e degli esiti dei test, le misure sono risultate precise e sufficientemente accurate, con un media ($\bar{x}$) calcolata distante solo 0.9 $\sigma_{\bar{x}}$ dal valor vero ($\mu$) registrato dalla fotocellula.
+Al fronte dei risultati ottenuti e degli esiti dei test, le misure sono risultate precise e sufficientemente accurate, con un media ($\bar{x}$) calcolata distante 0.9 $\sigma_{\bar{x}}$ dal valor vero ($\mu$) registrato dalla fotocellula. 
+
+Inoltre come evidenziato in [4.1], il confronto tra la deviazione standard della media e la sensibilità dello strumento suggerisce che i risultati ottenuti in fase di misurazione sono precisi rispetto alla sensibilità dello strumento utilizzato.
 
 \subsection{Possibili fonti di errore:}
 \begin{itemize}
-	\item \textbf{Errori sistematici:} 
-	\item \textbf{Errori casuali:}
+	\item \textbf{Errori sistematici:} Come citato in [6.3] possibili fonti di errori sistematici possono essere sorte sia dall'utilizzo di una strumentazione non professionale con sensibilità non elevate, piuttosto che da misure effettuate via video. Inoltre la sensibilità e la prontezza dei riflessi variano da persona a persona, a differenza della precisione di macchina di una fotocellula.
+	
+	Nonostante questo, come si evince dal test di Gauss e dal test del $\chi^2$ gli errori sistematici risultano trascurabili rispetto alle sole fluttuazioni statistiche. 
+	\item \textbf{Errori casuali:} Possibili fonti di errori casuali (fluttuazioni statistiche) sono dovuti per lo più alla mia prontezza ed ai miei riflessi in fase di misurazione. 
+	
+	Tali fluttuazioni statistiche, inevitabilmente presenti lungo tutta la durata della raccolta dati, denotano (dimostrato dal test del $\chi^2$) una distribuzione normale limite in accordo con la distribuzione delle misure effettuate. 
 \end{itemize}
 
 \subsection{Test condotti ed esiti:}
-\begin{itemize}
-	\item \textbf{Test di Gauss:} Il test di Gauss conferma l'ipotesi nulla $H_0$ confermando l'accordo tra la media $\bar{x}$ osservata e la media della popolazione $\mu$ calcolata attraverso la fotocellula.
-	\item \textbf{Test del Chi Quadro:} Il test del Chi Quadro conferma l'ipotesi nulla $H_0$, confermando che la distribuzione normale attesa si adatta alla distribuzione dei dati osservati.
-\end{itemize}
-
-\subsection{Conclusioni generali:}
-In generale, i risultati dell'esperimento sono coerenti con gli obiettivi stabiliti. Tuttavia, è importante notare che ogni esperimento potrebbe avere limitazioni, come variazioni nelle condizioni sperimentali o errori di misura. La robustezza dei test statistici utilizzati suggerisce una buona affidabilità dei risultati ottenuti.
-
+\begin{enumerate}
+	\item \textbf{Test di Gauss:} Il test di Gauss conferma l'ipotesi $H_0$ confermando l'accordo tra la media  calcolata ($\bar{x}$) e la media della popolazione ($\mu$) calcolata attraverso la fotocellula.
+	\item \textbf{Test del $\chi^2$:} Il test del $\chi^2$ conferma l'ipotesi $H_0$, confermando che la distribuzione normale attesa si adatta alla distribuzione dei dati osservati.
+\end{enumerate}
 
 \end{document}
 https://www.overleaf.com/project/65870edfd7e2495b8821da45
