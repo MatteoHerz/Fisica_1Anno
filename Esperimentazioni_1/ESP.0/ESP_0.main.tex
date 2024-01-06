@@ -96,10 +96,17 @@ $\mathbf{1.95 \pm 0.082 \, \text{s}}$
 \end{center}
 
 \section{Test del $\chi^2$}
-A fronte dell'esperienza condotta, mi aspetto che a descrivere l'istogramma sperimentale delle misure ripetute del periodo di oscillazione del pendolo sia la \textit{distribuzione di Gauss}.\newline
-Questo poiché suppongo che le misurazioni effettuate siano soggette principalmente a sorgenti di errori casuali e trascurabili errori sistematici. Se così dovesse risultare, i valori misurati sarebbero distribuiti su una curva a campana centrata attorno alla miglior stima del valore vero $\bar{x}$, non distante da $\mu$. \newline 
+A fronte dell'esperienza condotta, mi aspetto che a descrivere l'istogramma sperimentale delle misure ripetute del periodo di oscillazione del pendolo sia la \textit{distribuzione di Gauss}.
+
+Questo poiché suppongo che le misurazioni effettuate siano soggette principalmente a sorgenti di errori casuali e trascurabili errori sistematici. Se così dovesse risultare, i valori misurati sarebbero distribuiti su una curva a campana centrata attorno alla miglior stima del valore vero $\bar{x}$, non distante da $\mu$. 
 Nel caso in cui invece fossimo in presenza di errori sistematici non trascurabili dovrei osservare la distribuzione limite centrata su un valore $\bar{x}$ distante dal valor vero $\mu$ calcolato dalla fotocellula.
-\newline
+\\\\
+\textbf{DESCIRIVI UN PO' IL FUNZIONAMENTO (VAR. "Z")}
+\\\\
+\textbf{ISTOGRAMMA DELLE FREQUENZE}
+\\\\
+\textbf{ELENCA LE DUE IPOTESI CHIARAMENTE}
+
 \subsection{Dati ottenuti}
 \begin{table}[ht]
 \centering
@@ -113,11 +120,11 @@ Ipotesi del test & \textbf{\(H_0\)}: Le misurazioni seguono la distribuzione di 
 \hline
 Livello di significatività scelto & $\alpha = 0.05$ \\
 \hline
-Valore del $\chi^2$ calcolato & 1.72 \\
-\hline
 Numero di gradi di libertà & 4 \\
 \hline
-Valore critico della variabile $\chi^2$ & 9.49 \\
+Valore del $\chi^2$ critico & 9.49 \\
+\hline
+Valore del $\chi^2$ calcolato & 1.72 \\
 \hline
 \end{tabular}
 \label{tab:chi_quadro_test}
@@ -134,7 +141,7 @@ Inoltre si osserva che il $\chi^2$ calcolato è relativamente basso rispetto al 
 
 Riporto la stima del periodo ottenuta e la misura della fotocellula con le relative incertezze, unità di misura (u.m.) e cifre significative:
 
-\[ \text{Periodo} = 1.95 \pm 0.082\text{ s} \]
+\[ \text{Periodo} = 1.95 \pm 0.01\text{ s} \]
 \[ \text{Misura della Fotocellula} = 1.957 \pm 0.001 \text{ s} \]
 
 \subsection{Test di Compatibilità tra le Misure}
@@ -142,7 +149,9 @@ Riporto la stima del periodo ottenuta e la misura della fotocellula con le relat
 Per verificare se i due valori sono compatibili, utilizzo il test di Gauss o "test z".\\
 Utilizzo il test di Gauss in quanto quest'ultimo permette di ricavare in maniera empirica la probabilità di osservare stime ($\bar{x}_i$), affette da soli errori casuali, più distanti in valore assoluto dal valor vero ($\mu$) rispetto alla media ($\bar{x}$) da noi calcolata. 
 
-Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da sole fluttuazioni statistiche (e dunque compatibile con $\mu$) o da errori sistematici che la traslano inevitabilmente rispetto al valore vero (e dunque incompatibile con $\mu$). 
+Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da sole fluttuazioni statistiche (e dunque compatibile con $\mu$) o da errori sistematici che la traslano inevitabilmente rispetto al valore vero (e dunque incompatibile con $\mu$). \\
+
+\textbf{BREVE DESCRIZIONE DELLA VARIABILE STATISTICA CALCOLATA. }
 
 \subsubsection{Informazioni relative al Test}
 
@@ -157,13 +166,11 @@ Il test permette dunque di verificare se la $\bar{x}$ calcolata è affetta da so
                 \hline
                     Livello di significatività scelto ($\alpha$) & 0.05 \\
                 \hline
+                  p-value & 0.368 \\
+                \hline 
                     Valore Critico della Variabile Statistica ($z_{critico}$)  &  1.96 \\
                 \hline
                     Valore della Variabile Statistica Calcolata ($z_{oss}$) & 0.90 \\
-                \hline
-                p-value critico & 0.05  \\
-                \hline
-                    p-value & 0.368 \\
                 \hline          
             \end{tabular}
         \label{tab:gauss_test}
@@ -196,7 +203,6 @@ Tale compatibilità indica che siamo effetivamente in presenza di errori sistema
 \\\\ \noindent\textbf{Intervallo} $\mu \pm \sigma_{\bar{x}}$: rappresenta l'intervallo di confidenza del 68\% attorno alla media della popolazione ($\mu$), dove $\sigma_{\bar{x}}$ è la deviazione standard della media.
 \\Se si compissero infatti molte determinazioni della media di $N$ misure, allora i risultati $\bar{x}$ si distribuirebbero attorno a $\mu$ con larghezza $\sigma_{\bar{x}} =  \frac{\sigma_x}{\sqrt{N}} $.
 \\ Dunque, se si calcolasse la media di $N$ misure una volta, si potrebbe essere confidenti al 68\% che tale risultato giaccia entro una distanza $ \sigma_{\bar{x}}$ dal valor vero.
-\\\\ \textbf{TAYLOR PAG. 152}
 
 \subsection{$N$ misure necessarie}
 Per determinare il numero di misure $N$ necessarie affinché l'errore sulla media sia uguale alla sensibilità dello strumento, utilizzo la formula per il calcolo dell'errore standard della media ($\sigma_{\bar{x}}$):
@@ -235,13 +241,13 @@ Per determinare il numero di misure $N$ necessarie affinché l'errore sulla medi
 		Test del $\chi^2$ & $\chi^2_{oss} = 1.72$  & $\chi^2_{critico} = 9.49$ &  Test Superato \\
 		\hline
 		Test di Gauss & $z_{oss} = 0.90$ & $z_{critico} = 1.96$ & Test Superato \\
-		& $p-value_{oss} = 0.368$ & $p-value_{critico} = ...$ &   \\
+		& $p-value_{oss} = 0.368$ & $ \alpha = 0.05$ &   \\
 		\hline
 	\end{tabular}
 	\label{tab:sintesi_quantitativa}
 \end{table}
 
-\[ \text{\textbf{Media del Periodo di oscillazione \underline{calcolata}}  } \rightarrow \bar{x} = 1.95 \pm 0.082\text{ s} \]
+\[ \text{\textbf{Media del Periodo di oscillazione \underline{calcolata}}  } \rightarrow \bar{x} = 1.95 \pm 0.01\text{ s} \]
 \[ \text{\textbf{Media del Periodo di oscillazione \underline{teorica}}    } \rightarrow \mu = 1.957 \pm 0.001 \text{ s} \]
 
 \subsection{Qualità della misura:}
@@ -253,16 +259,18 @@ Inoltre come evidenziato in [4.1], il confronto tra la deviazione standard della
 \begin{itemize}
 	\item \textbf{Errori sistematici:} Come citato in [6.3] possibili fonti di errori sistematici possono essere sorte sia dall'utilizzo di una strumentazione non professionale con sensibilità non elevate, piuttosto che da misure effettuate via video. Inoltre la sensibilità e la prontezza dei riflessi variano da persona a persona, a differenza della precisione di macchina di una fotocellula.
 	
-	Nonostante questo, come si evince dal test di Gauss e dal test del $\chi^2$ gli errori sistematici risultano trascurabili rispetto alle sole fluttuazioni statistiche. 
-	\item \textbf{Errori casuali:} Possibili fonti di errori casuali (fluttuazioni statistiche) sono dovuti per lo più alla mia prontezza ed ai miei riflessi in fase di misurazione. 
+	Nonostante questo, come si evince dal test di Gauss e dal test del $\chi^2$ gli errori sistematici risultano trascurabili rispetto alle sole fluttuazioni statistiche.
 	
-	Tali fluttuazioni statistiche, inevitabilmente presenti lungo tutta la durata della raccolta dati, denotano (dimostrato dal test del $\chi^2$) una distribuzione normale limite in accordo con la distribuzione delle misure effettuate. 
+	\item \textbf{Errori casuali:} Possibili fonti di errori casuali (fluttuazioni statistiche) sono dovute per lo più ai miei riflessi e alla prontezza in fase di misurazione, ma in secondo luogo anche ad altre possibili fonti esterne (ad esempio distrazioni).
+	
+	Come dimostrato dal test del $\chi^2$, gli errori sistematici risultano trascurabili rispetto ai soli errori casuali, la cui presenza nelle misurazioni denota proprio una distribuzione gaussiana limite in accordo con la distribuzione delle misure effettuate.
+
 \end{itemize}
 
 \subsection{Test condotti ed esiti:}
 \begin{enumerate}
-	\item \textbf{Test di Gauss:} Il test di Gauss conferma l'ipotesi $H_0$ confermando l'accordo tra la media  calcolata ($\bar{x}$) e la media della popolazione ($\mu$) calcolata attraverso la fotocellula.
-	\item \textbf{Test del $\chi^2$:} Il test del $\chi^2$ conferma l'ipotesi $H_0$, confermando che la distribuzione normale attesa si adatta alla distribuzione dei dati osservati.
+	\item \textbf{Test di Gauss:} Il test di Gauss conferma l'ipotesi $H_0$ \textbf{confermando} (CAMBIARE) l'accordo tra la media  calcolata ($\bar{x}$) e la media della popolazione ($\mu$) calcolata attraverso la fotocellula.
+	\item \textbf{Test del $\chi^2$:} Il test del $\chi^2$ conferma l'ipotesi $H_0$, \textbf{confermando} che la distribuzione normale attesa si adatta alla distribuzione dei dati osservati.
 \end{enumerate}
 
 \end{document}
