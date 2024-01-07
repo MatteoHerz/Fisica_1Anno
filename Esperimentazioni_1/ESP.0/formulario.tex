@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{svg}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[skins]{tcolorbox}
+\usepackage[version=4]{mhchem}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage{xymtex}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{attachfile}
+
+
+\title{\LARGE\textbf{Formulario utilizzato}}
+\author{\Large Matteo Herz}
+\date{7 gennaio 2024}
+
+
+\begin{document}
+	\maketitle
+	
+	\vspace{2.5cm}
+	
+	\[
+	\bar{x} = \frac{\sum_{i=1}^{N}x_{i}}{N}  \quad\quad\text{Media}
+	\]
+	\[
+	\sigma_x = \sqrt{\frac{\sum_{i=1}^{N}\left(x_{i} - \bar{x}\right)}{N-1}} \quad\quad\text{Deviazione Standard}
+	\]
+	
+	\[
+	\sigma_{\bar{x}} = \frac{\sigma_{x}}{\sqrt{N}} \quad\quad\text{Deviazione Standard delle media}
+	\]
+	
+	\[ z_{\text{oss}} = \frac{| \bar{x} - \mu |}{\sigma_{\bar{x}}}\quad\quad\text{Variabile statistica $z$}  \] 
+	
+	\[
+	p-value_{oss} = 1 - \bigg( \frac{1}{\sqrt{2\pi}} \int_{-z_{oss}}^{+ z_{oss}}e^{-\frac{-z^2}{2}} \,dz \bigg) \quad\quad\text{p-value}\]
+	
+	\[
+	P=\frac{1}{\sigma\sqrt{2\pi}}e^{\left(-\frac{\left(x_{k}-\bar{x}\right)^2}{2\sigma^2}\right)}\Delta  \quad\quad\text{Probabilità} 
+	\]
+	
+	\[
+	E_{k} = \frac{1}{\sigma\sqrt{2\pi}}e^{\left(-\frac{\left(x_{k}-\bar{x}\right)^2}{2\sigma^2}\right)}\Delta N
+	\quad\quad\text{Frequenza Assoluta Attesa}
+	\]
+	
+	\vspace{0.4cm}
+	
+	\[
+	\chi^2 = \sum_{k=1}^{n}\left(\frac{E_{k}-O_{k}}{\sigma_k}\right)^2\quad\quad\text{Chi-Quadro $\chi^2$}
+	\]
+	\begin{center}
+		$n = \text{numero di misure accorpate}$
+	\end{center}
+	
+	
+\end{document}
