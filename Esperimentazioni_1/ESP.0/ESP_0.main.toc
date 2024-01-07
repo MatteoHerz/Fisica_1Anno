@@ -1,22 +1,26 @@
-\contentsline {section}{\numberline {1}Punto 1}{2}{}%
-\contentsline {section}{\numberline {2}Punto 2}{2}{}%
-\contentsline {section}{\numberline {3}Punto 3}{2}{}%
-\contentsline {section}{\numberline {4}Punto 4}{2}{}%
-\contentsline {subsection}{\numberline {4.1}Errore sulla stima - Sensibilità dello strumento}{2}{}%
-\contentsline {subsection}{\numberline {4.2}Risultato ottenuto}{2}{}%
+\contentsline {section}{\numberline {1}Scopo dell'esperienza}{2}{}%
+\contentsline {section}{\numberline {2}Strumentazione utilizzata}{2}{}%
+\contentsline {section}{\numberline {3}Procedura di misura effettuata}{2}{}%
+\contentsline {section}{\numberline {4}Analisi Dati}{2}{}%
+\contentsline {subsection}{\numberline {4.1}Test del 3-$\sigma _{x}$ }{3}{}%
+\contentsline {subsection}{\numberline {4.2}Errore sulla stima - Sensibilità dello strumento}{3}{}%
+\contentsline {subsection}{\numberline {4.3}Risultato ottenuto}{3}{}%
 \contentsline {section}{\numberline {5}Test del $\chi ^2$}{3}{}%
-\contentsline {subsection}{\numberline {5.1}Dati ottenuti}{3}{}%
-\contentsline {subsection}{\numberline {5.2}Conclusione Test del $\chi ^2$}{3}{}%
-\contentsline {section}{\numberline {6}Test di Gauss}{3}{}%
-\contentsline {subsection}{\numberline {6.1}Stima del Periodo e Misura della Fotocellula}{3}{}%
-\contentsline {subsection}{\numberline {6.2}Test di Compatibilità tra le Misure}{3}{}%
-\contentsline {subsubsection}{\numberline {6.2.1}Informazioni relative al Test}{4}{}%
-\contentsline {subsubsection}{\numberline {6.2.2}Conclusione del Test}{4}{}%
-\contentsline {subsection}{\numberline {6.3}Commenti}{4}{}%
-\contentsline {section}{\numberline {7}Intervalli $\mu \pm \sigma _x$ e $\mu \pm \sigma _{\bar {x}}$}{5}{}%
-\contentsline {subsection}{\numberline {7.1}$N$ misure necessarie}{5}{}%
-\contentsline {section}{\numberline {8}Conclusione}{5}{}%
-\contentsline {subsection}{\numberline {8.1}Sintesi Quantitativa dei Risultati dell'Esperienza}{5}{}%
-\contentsline {subsection}{\numberline {8.2}Qualità della misura:}{6}{}%
-\contentsline {subsection}{\numberline {8.3}Possibili fonti di errore:}{6}{}%
-\contentsline {subsection}{\numberline {8.4}Test condotti ed esiti:}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Istogramma delle frequenze}{4}{}%
+\contentsline {subsection}{\numberline {5.2}Ipotesi del Test}{4}{}%
+\contentsline {subsection}{\numberline {5.3}Dati ottenuti}{4}{}%
+\contentsline {subsection}{\numberline {5.4}Conclusione Test del $\chi ^2$}{5}{}%
+\contentsline {section}{\numberline {6}Test di Gauss}{5}{}%
+\contentsline {subsection}{\numberline {6.1}Stima del Periodo e Misura della Fotocellula}{5}{}%
+\contentsline {subsection}{\numberline {6.2}Test di Compatibilità tra le Misure}{5}{}%
+\contentsline {subsection}{\numberline {6.3}Ipotesi del Test}{6}{}%
+\contentsline {subsection}{\numberline {6.4}Dati ottenuti}{6}{}%
+\contentsline {subsection}{\numberline {6.5}Conclusione del Test}{6}{}%
+\contentsline {subsection}{\numberline {6.6}Commenti}{6}{}%
+\contentsline {section}{\numberline {7}Intervalli $\mu \pm \sigma _x$ e $\mu \pm \sigma _{\bar {x}}$}{6}{}%
+\contentsline {subsection}{\numberline {7.1}$N$ misure necessarie}{7}{}%
+\contentsline {section}{\numberline {8}Conclusione}{7}{}%
+\contentsline {subsection}{\numberline {8.1}Sintesi Quantitativa dei Risultati dell'Esperienza}{7}{}%
+\contentsline {subsection}{\numberline {8.2}Qualità della misura}{7}{}%
+\contentsline {subsection}{\numberline {8.3}Possibili fonti di errore}{8}{}%
+\contentsline {subsection}{\numberline {8.4}Test condotti ed esiti}{8}{}%
