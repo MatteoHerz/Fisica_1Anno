@@ -1,3 +1,0 @@
-Writing text to file. This is the first line.
-And the second line.
- Third line!!!!!!!
