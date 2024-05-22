@@ -1,0 +1,39 @@
+\contentsline {section}{\numberline {1}Scopo dell'esperienza}{2}{}%
+\contentsline {section}{\numberline {2}Strumentazione}{2}{}%
+\contentsline {section}{\numberline {3}Spinta di Archimede in funzione di $V_i$}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Metodo dei minimi quadrati (fluido 1)}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Valori ottenuti}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Grafico - Retta dei minini quadrati}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Test $\chi ^2$ - Ipotesi}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Test $\chi ^2$ - Esito}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Test di Gauss - termine noto}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Dati del test}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Esito del test}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Confronto densità (fluido 1)}{6}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Dati del test}{6}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Esito del test}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Metodo dei minimi quadrati (fluido 2)}{7}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Valori ottenuti}{7}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Grafico - Retta dei minini quadrati}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Test $\chi ^2$ - Ipotesi}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Test del $\chi ^2$ - Esito}{8}{}%
+\contentsline {subsection}{\numberline {3.5}Confronto densità (fluido 2)}{8}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Dati del test}{9}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Esito del test}{9}{}%
+\contentsline {subsection}{\numberline {3.6}Rapporto spinte di Archimede}{9}{}%
+\contentsline {section}{\numberline {4}Spinta di Archimede in funzione di $\rho _c$}{10}{}%
+\contentsline {section}{\numberline {5}Viscosità e spinta di Archimede}{11}{}%
+\contentsline {subsection}{\numberline {5.1}Test di Gauss ($v_1 - v_2$)}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Esito del test}{13}{}%
+\contentsline {subsection}{\numberline {5.2}Test di Gauss ($v_1 - v_3$)}{13}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Esito del test}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Test di Gauss ($v_2 - v_3$)}{13}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Esito del test}{13}{}%
+\contentsline {subsubsection}{\numberline {5.3.2}Conclusioni - confronto velocità}{14}{}%
+\contentsline {subsection}{\numberline {5.4}Coefficiente di viscosità: $\eta $}{14}{}%
+\contentsline {subsubsection}{\numberline {5.4.1}\bm {$\eta $} trascurando Archimede}{14}{}%
+\contentsline {subsubsection}{\numberline {5.4.2}\bm {$\eta $} includendo Archimede}{15}{}%
+\contentsline {subsection}{\numberline {5.5}Test di Gauss - $\eta $}{15}{}%
+\contentsline {subsubsection}{\numberline {5.5.1}Esito del test}{15}{}%
+\contentsline {section}{\numberline {6}Conclusioni}{16}{}%
+\contentsline {section}{Appendice A}{17}{}%
