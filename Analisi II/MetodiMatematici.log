@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.9)  2 JAN 2025 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.9)  2 JAN 2025 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**analisi_2.tex
-(./analisi_2.tex
+**MetodiMatematici.tex
+(./MetodiMatematici.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -1275,8 +1275,8 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 85.
 
-(./analisi_2.aux)
-\openout1 = `analisi_2.aux'.
+(./MetodiMatematici.aux)
+\openout1 = `MetodiMatematici.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
@@ -1292,7 +1292,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count438
 \scratchdimen=\dimen392
@@ -1410,7 +1411,7 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./analisi_2.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./MetodiMatematici.toc
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 
@@ -1428,29 +1429,32 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write6
-\openout6 = `analisi_2.toc'.
+\openout6 = `MetodiMatematici.toc'.
 
- [1] [2] (./analisi_2.aux)
+ [1] [2]
+(./MetodiMatematici.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 43559 strings out of 476076
- 1045850 string characters out of 5793775
+ 43560 strings out of 476076
+ 1045977 string characters out of 5793775
  1931187 words of memory out of 5000000
- 64886 multiletter control sequences out of 15000+600000
+ 64887 multiletter control sequences out of 15000+600000
  562088 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,5n,113p,724b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,5n,113p,731b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on analisi_2.pdf (3 pages, 48466 bytes).
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on MetodiMatematici.pdf (3 pages, 75690 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
